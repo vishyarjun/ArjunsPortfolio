@@ -1,0 +1,177 @@
+/* applies to all the elements */
+*{
+	box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 0;
+    margin: 0;
+}
+.block{
+    display: block;
+}
+h1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height:0.7em;
+}
+hr.hr-cl{
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    color: #2d3c49;
+}
+aside{
+	position: fixed;
+	left: 0px;
+	float: left;
+	width: 20%;
+	background-color: #7d97ad;
+}
+header{
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+figure {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+.head-layer{
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+}
+.head-text{
+    float: right;
+    text-align: right;
+    font-family: "Arial","Times New Roman", Times, serif;
+    padding: 0px;
+}
+.upper-text{
+text-transform: uppercase;
+}
+.logo{
+    float: left;
+}
+.banner{
+    width:100%;
+}
+#fw{
+  color: #7d97ad;
+}
+footer {
+    background-color: #2d3c49;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 0;
+    margin: 0;
+}
+#foo{
+    color:#02b3e4;
+}
+.art{
+    width: 300px;
+    padding: 15px;
+    margin: 15px 15px 15px 15px;
+    text-align: justify;
+}
+.column {
+    margin: 15px 15px 15px 15px;
+    padding: 2px;
+}
+.column:last-child {
+    padding-bottom: 60px;
+}
+.column::after {
+    content: '';
+    clear: both;
+    display: inline-block;
+}
+.column div {
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 15px 15px 15px 15px;
+    padding: 0;
+}
+.column div:first-child {
+    margin: 15px 15px 15px 15px;
+}
+.column div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    color: #444;
+    font-size: 18px;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover06 figure img {
+    display: block;
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover06 figure:hover img {
+    display: block;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+/* Flashing */
+.hover13:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* the following class is used to print text which is over the banner image */
+.text_over_image{
+    color: #02b3e4;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    display: block;
+    }
+strong, em,a{
+    padding: 2px
+}
+.img-with-text {
+    text-align: justify;
+    width: 300px;
+}
